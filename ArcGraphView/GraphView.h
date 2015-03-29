@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GraphView : UIView
-
+@property (assign, nonatomic) CGFloat progress;
 @end

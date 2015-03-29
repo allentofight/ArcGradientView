@@ -85,29 +85,75 @@ static UIImage *imageWithSize(CGSize size, UIColor *startColor, UIColor *endColo
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    self.view.backgroundColor = [UIColor redColor];
+    CAShapeLayer *arc = [CAShapeLayer layer];
+    CGFloat width = CGRectGetWidth(_imageView.frame)/2;
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(width, width) radius:width-15 startAngle:-M_PI_2 endAngle:1.5*M_PI*0.9 clockwise:YES];
 
-
+    arc.path = path.CGPath;
+//    arc.position = CGPointMake(CGRectGetMidX(self.view.frame)-radius, CGRectGetMidY(self.view.frame)-radius);
+//    arc.position = CGPointMake(CGRectGetWidth(_imageView.bounds)/2, CGRectGetHeight(_imageView.bounds)/2);
+    arc.frame = _imageView.frame;
+    arc.fillColor = [UIColor clearColor].CGColor;
+    arc.strokeColor = [UIColor purpleColor].CGColor;
+    arc.lineWidth = 30.0f;
+    arc.cornerRadius = 3.0f;
+    arc.lineCap = kCALineCapRound;
+    
+    
     UIImage *image = [_graphView captureToImage];
+//    UIView *testView = [[UIView alloc] initWithFrame:_imageView.frame];
+//    _imageView.frame = _imageView.bounds;
+//    [testView addSubview:_imageView];
+//    [self.view addSubview:testView];
+//    testView.layer.mask = arc;
     
-    CALayer *superLayer = [CALayer layer];
-    superLayer.frame = CGRectMake(200, 100, 100, 100);
-    superLayer.contents = (__bridge id)(image.CGImage);
+//    [self.view addSubview:testView];
     
     
-    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
-    [bezierPath addLineToPoint:CGPointMake(50, 50)];
-    [bezierPath addArcWithCenter:CGPointMake(50, 50) radius:50 startAngle:0 endAngle:M_PI_2 clockwise:YES];
+    self.view.layer.mask = arc;
+    _imageView.image = image;
+//    subView.backgroundColor = [UIColor colorWithPatternImage:image];
+//    subView.layer.mask = arc;
+//    self.view.layer.mask = arc;
+    
+//    _imageView.layer.mask = arc;
+    _graphView.hidden = YES;
+//
+    return;
+#define degreesToRadians(x) ((x) * M_PI / 180.0)
+    
+
+//    _graphView.hidden = YES;
+
+
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(width, width) radius:width-30 startAngle:-M_PI_2 endAngle:1.5*M_PI*0.9 clockwise:YES];
+
+    {
+        CGFloat thicknessRatio = 30.0/CGRectGetWidth(_graphView.bounds)*2;
+        CGFloat radius = CGRectGetWidth(_graphView.bounds)/2;
+        CGFloat radians = (float)((0.5 * 2.0f * M_PI) - M_PI_2);
+        CGFloat xOffset = radius * (1.0f + ((1.0f - (thicknessRatio / 2.0f)) * cosf(radians)));
+        CGFloat yOffset = radius * (1.0f + ((1.0f - (thicknessRatio / 2.0f)) * sinf(radians)));
+        CGPoint endPoint = CGPointMake(xOffset, yOffset);
+        
+//        [bezierPath addArcWithCenter:endPoint radius:30 startAngle:0 endAngle:M_2_PI clockwise:YES];
+    }
+    
+    
+    [bezierPath closePath];
     
     CAShapeLayer *mask = [CAShapeLayer layer];
-    mask.bounds = CGRectMake(0, 0, 100, 100);
-//    arc.path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(50, 50) radius:50 startAngle:-M_PI/2 endAngle:M_PI/2 clockwise:YES].CGPath;
+    mask.frame = CGRectMake(0, 0, 300, 300);
     mask.path = bezierPath.CGPath;//[UIBezierPath bezierPathWithRect:arc.bounds].CGPath;
-    mask.fillColor = [UIColor blackColor].CGColor;
-    mask.lineWidth = 10;
+//    mask.fillColor = [UIColor blackColor].CGColor;
+    mask.lineWidth = 30;
+    mask.cornerRadius = 3.0f;
     mask.lineCap = kCALineCapRound;
-    superLayer.mask = mask;
     
-    [self.view.layer addSublayer:superLayer];
+    _imageView.layer.mask = mask;
+    _graphView.hidden = YES;
+    
     
 }
 
