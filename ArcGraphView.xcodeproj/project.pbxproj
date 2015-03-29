@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D180FDDC1AC6DB3700B413F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FDDB1AC6DB3700B413F4 /* main.m */; };
+		D180FDDF1AC6DB3700B413F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FDDE1AC6DB3700B413F4 /* AppDelegate.m */; };
+		D180FDE21AC6DB3700B413F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FDE11AC6DB3700B413F4 /* ViewController.m */; };
+		D180FDE51AC6DB3700B413F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D180FDE31AC6DB3700B413F4 /* Main.storyboard */; };
+		D180FDE71AC6DB3700B413F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D180FDE61AC6DB3700B413F4 /* Images.xcassets */; };
+		D180FDEA1AC6DB3700B413F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D180FDE81AC6DB3700B413F4 /* LaunchScreen.xib */; };
+		D180FDF61AC6DB3700B413F4 /* ArcGraphViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FDF51AC6DB3700B413F4 /* ArcGraphViewTests.m */; };
+		D180FE071AC78B8700B413F4 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FE061AC78B8700B413F4 /* GraphView.m */; };
+		D180FE0A1AC79D0300B413F4 /* UIView+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = D180FE091AC79D0300B413F4 /* UIView+Capture.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D180FDF01AC6DB3700B413F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D180FDCE1AC6DB3700B413F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D180FDD51AC6DB3700B413F4;
+			remoteInfo = ArcGraphView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcGraphView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D180FDDA1AC6DB3700B413F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D180FDDB1AC6DB3700B413F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D180FDDD1AC6DB3700B413F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D180FDDE1AC6DB3700B413F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D180FDE01AC6DB3700B413F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D180FDE11AC6DB3700B413F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D180FDE41AC6DB3700B413F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D180FDE61AC6DB3700B413F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D180FDE91AC6DB3700B413F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcGraphViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D180FDF41AC6DB3700B413F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D180FDF51AC6DB3700B413F4 /* ArcGraphViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcGraphViewTests.m; sourceTree = "<group>"; };
+		D180FE051AC78B8700B413F4 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		D180FE061AC78B8700B413F4 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		D180FE081AC79D0300B413F4 /* UIView+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Capture.h"; sourceTree = "<group>"; };
+		D180FE091AC79D0300B413F4 /* UIView+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Capture.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D180FDD31AC6DB3700B413F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D180FDEC1AC6DB3700B413F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D180FDCD1AC6DB3700B413F4 = {
+			isa = PBXGroup;
+			children = (
+				D180FDD81AC6DB3700B413F4 /* ArcGraphView */,
+				D180FDF21AC6DB3700B413F4 /* ArcGraphViewTests */,
+				D180FDD71AC6DB3700B413F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D180FDD71AC6DB3700B413F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */,
+				D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D180FDD81AC6DB3700B413F4 /* ArcGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				D180FDDD1AC6DB3700B413F4 /* AppDelegate.h */,
+				D180FDDE1AC6DB3700B413F4 /* AppDelegate.m */,
+				D180FDE01AC6DB3700B413F4 /* ViewController.h */,
+				D180FDE11AC6DB3700B413F4 /* ViewController.m */,
+				D180FDE31AC6DB3700B413F4 /* Main.storyboard */,
+				D180FDE61AC6DB3700B413F4 /* Images.xcassets */,
+				D180FDE81AC6DB3700B413F4 /* LaunchScreen.xib */,
+				D180FDD91AC6DB3700B413F4 /* Supporting Files */,
+				D180FE051AC78B8700B413F4 /* GraphView.h */,
+				D180FE061AC78B8700B413F4 /* GraphView.m */,
+				D180FE081AC79D0300B413F4 /* UIView+Capture.h */,
+				D180FE091AC79D0300B413F4 /* UIView+Capture.m */,
+			);
+			path = ArcGraphView;
+			sourceTree = "<group>";
+		};
+		D180FDD91AC6DB3700B413F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D180FDDA1AC6DB3700B413F4 /* Info.plist */,
+				D180FDDB1AC6DB3700B413F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D180FDF21AC6DB3700B413F4 /* ArcGraphViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D180FDF51AC6DB3700B413F4 /* ArcGraphViewTests.m */,
+				D180FDF31AC6DB3700B413F4 /* Supporting Files */,
+			);
+			path = ArcGraphViewTests;
+			sourceTree = "<group>";
+		};
+		D180FDF31AC6DB3700B413F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D180FDF41AC6DB3700B413F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D180FDD51AC6DB3700B413F4 /* ArcGraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphView" */;
+			buildPhases = (
+				D180FDD21AC6DB3700B413F4 /* Sources */,
+				D180FDD31AC6DB3700B413F4 /* Frameworks */,
+				D180FDD41AC6DB3700B413F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcGraphView;
+			productName = ArcGraphView;
+			productReference = D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D180FDEE1AC6DB3700B413F4 /* ArcGraphViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphViewTests" */;
+			buildPhases = (
+				D180FDEB1AC6DB3700B413F4 /* Sources */,
+				D180FDEC1AC6DB3700B413F4 /* Frameworks */,
+				D180FDED1AC6DB3700B413F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D180FDF11AC6DB3700B413F4 /* PBXTargetDependency */,
+			);
+			name = ArcGraphViewTests;
+			productName = ArcGraphViewTests;
+			productReference = D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D180FDCE1AC6DB3700B413F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ronaldo;
+				TargetAttributes = {
+					D180FDD51AC6DB3700B413F4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D180FDEE1AC6DB3700B413F4 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D180FDD51AC6DB3700B413F4;
+					};
+				};
+			};
+			buildConfigurationList = D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGraphView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D180FDCD1AC6DB3700B413F4;
+			productRefGroup = D180FDD71AC6DB3700B413F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D180FDD51AC6DB3700B413F4 /* ArcGraphView */,
+				D180FDEE1AC6DB3700B413F4 /* ArcGraphViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D180FDD41AC6DB3700B413F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D180FDE51AC6DB3700B413F4 /* Main.storyboard in Resources */,
+				D180FDEA1AC6DB3700B413F4 /* LaunchScreen.xib in Resources */,
+				D180FDE71AC6DB3700B413F4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D180FDED1AC6DB3700B413F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D180FDD21AC6DB3700B413F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D180FDE21AC6DB3700B413F4 /* ViewController.m in Sources */,
+				D180FDDF1AC6DB3700B413F4 /* AppDelegate.m in Sources */,
+				D180FDDC1AC6DB3700B413F4 /* main.m in Sources */,
+				D180FE0A1AC79D0300B413F4 /* UIView+Capture.m in Sources */,
+				D180FE071AC78B8700B413F4 /* GraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D180FDEB1AC6DB3700B413F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D180FDF61AC6DB3700B413F4 /* ArcGraphViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D180FDF11AC6DB3700B413F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D180FDD51AC6DB3700B413F4 /* ArcGraphView */;
+			targetProxy = D180FDF01AC6DB3700B413F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D180FDE31AC6DB3700B413F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D180FDE41AC6DB3700B413F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D180FDE81AC6DB3700B413F4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D180FDE91AC6DB3700B413F4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D180FDF71AC6DB3700B413F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D180FDF81AC6DB3700B413F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D180FDFA1AC6DB3700B413F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArcGraphView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D180FDFB1AC6DB3700B413F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArcGraphView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D180FDFD1AC6DB3700B413F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArcGraphViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcGraphView.app/ArcGraphView";
+			};
+			name = Debug;
+		};
+		D180FDFE1AC6DB3700B413F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArcGraphViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcGraphView.app/ArcGraphView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D180FDF71AC6DB3700B413F4 /* Debug */,
+				D180FDF81AC6DB3700B413F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D180FDFA1AC6DB3700B413F4 /* Debug */,
+				D180FDFB1AC6DB3700B413F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D180FDFD1AC6DB3700B413F4 /* Debug */,
+				D180FDFE1AC6DB3700B413F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D180FDCE1AC6DB3700B413F4 /* Project object */;
+}
