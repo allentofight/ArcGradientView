@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcGraphView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D180FDD61AC6DB3700B413F4 /* ArcGradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcGradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D180FDDA1AC6DB3700B413F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D180FDDB1AC6DB3700B413F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D180FDDD1AC6DB3700B413F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		D180FDE41AC6DB3700B413F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D180FDE61AC6DB3700B413F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D180FDE91AC6DB3700B413F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcGraphViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D180FDEF1AC6DB3700B413F4 /* ArcGradientViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcGradientViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D180FDF41AC6DB3700B413F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D180FDF51AC6DB3700B413F4 /* ArcGraphViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcGraphViewTests.m; sourceTree = "<group>"; };
 		D180FE051AC78B8700B413F4 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		D180FDD71AC6DB3700B413F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */,
-				D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */,
+				D180FDD61AC6DB3700B413F4 /* ArcGradientView.app */,
+				D180FDEF1AC6DB3700B413F4 /* ArcGradientViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D180FDD51AC6DB3700B413F4 /* ArcGraphView */ = {
+		D180FDD51AC6DB3700B413F4 /* ArcGradientView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphView" */;
+			buildConfigurationList = D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGradientView" */;
 			buildPhases = (
 				D180FDD21AC6DB3700B413F4 /* Sources */,
 				D180FDD31AC6DB3700B413F4 /* Frameworks */,
@@ -144,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = ArcGraphView;
+			name = ArcGradientView;
 			productName = ArcGraphView;
-			productReference = D180FDD61AC6DB3700B413F4 /* ArcGraphView.app */;
+			productReference = D180FDD61AC6DB3700B413F4 /* ArcGradientView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D180FDEE1AC6DB3700B413F4 /* ArcGraphViewTests */ = {
+		D180FDEE1AC6DB3700B413F4 /* ArcGradientViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphViewTests" */;
+			buildConfigurationList = D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGradientViewTests" */;
 			buildPhases = (
 				D180FDEB1AC6DB3700B413F4 /* Sources */,
 				D180FDEC1AC6DB3700B413F4 /* Frameworks */,
@@ -162,9 +162,9 @@
 			dependencies = (
 				D180FDF11AC6DB3700B413F4 /* PBXTargetDependency */,
 			);
-			name = ArcGraphViewTests;
+			name = ArcGradientViewTests;
 			productName = ArcGraphViewTests;
-			productReference = D180FDEF1AC6DB3700B413F4 /* ArcGraphViewTests.xctest */;
+			productReference = D180FDEF1AC6DB3700B413F4 /* ArcGradientViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGraphView" */;
+			buildConfigurationList = D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGradientView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -198,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D180FDD51AC6DB3700B413F4 /* ArcGraphView */,
-				D180FDEE1AC6DB3700B413F4 /* ArcGraphViewTests */,
+				D180FDD51AC6DB3700B413F4 /* ArcGradientView */,
+				D180FDEE1AC6DB3700B413F4 /* ArcGradientViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		D180FDF11AC6DB3700B413F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D180FDD51AC6DB3700B413F4 /* ArcGraphView */;
+			target = D180FDD51AC6DB3700B413F4 /* ArcGradientView */;
 			targetProxy = D180FDF01AC6DB3700B413F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -357,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ArcGraphView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArcGradientView;
 			};
 			name = Debug;
 		};
@@ -367,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ArcGraphView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArcGradientView;
 			};
 			name = Release;
 		};
@@ -385,7 +385,7 @@
 				);
 				INFOPLIST_FILE = ArcGraphViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArcGradientViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcGraphView.app/ArcGraphView";
 			};
 			name = Debug;
@@ -400,7 +400,7 @@
 				);
 				INFOPLIST_FILE = ArcGraphViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArcGradientViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcGraphView.app/ArcGraphView";
 			};
 			name = Release;
@@ -408,7 +408,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGraphView" */ = {
+		D180FDD11AC6DB3700B413F4 /* Build configuration list for PBXProject "ArcGradientView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D180FDF71AC6DB3700B413F4 /* Debug */,
@@ -417,7 +417,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphView" */ = {
+		D180FDF91AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGradientView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D180FDFA1AC6DB3700B413F4 /* Debug */,
@@ -426,7 +426,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGraphViewTests" */ = {
+		D180FDFC1AC6DB3700B413F4 /* Build configuration list for PBXNativeTarget "ArcGradientViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D180FDFD1AC6DB3700B413F4 /* Debug */,

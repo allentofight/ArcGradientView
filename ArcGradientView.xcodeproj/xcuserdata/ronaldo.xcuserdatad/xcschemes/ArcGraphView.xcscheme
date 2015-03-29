@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D180FDD51AC6DB3700B413F4"
-               BuildableName = "ArcGraphView.app"
-               BlueprintName = "ArcGraphView"
-               ReferencedContainer = "container:ArcGraphView.xcodeproj">
+               BuildableName = "ArcGradientView.app"
+               BlueprintName = "ArcGradientView"
+               ReferencedContainer = "container:ArcGradientView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D180FDEE1AC6DB3700B413F4"
-               BuildableName = "ArcGraphViewTests.xctest"
-               BlueprintName = "ArcGraphViewTests"
-               ReferencedContainer = "container:ArcGraphView.xcodeproj">
+               BuildableName = "ArcGradientViewTests.xctest"
+               BlueprintName = "ArcGradientViewTests"
+               ReferencedContainer = "container:ArcGradientView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D180FDEE1AC6DB3700B413F4"
-               BuildableName = "ArcGraphViewTests.xctest"
-               BlueprintName = "ArcGraphViewTests"
-               ReferencedContainer = "container:ArcGraphView.xcodeproj">
+               BuildableName = "ArcGradientViewTests.xctest"
+               BlueprintName = "ArcGradientViewTests"
+               ReferencedContainer = "container:ArcGradientView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D180FDD51AC6DB3700B413F4"
-            BuildableName = "ArcGraphView.app"
-            BlueprintName = "ArcGraphView"
-            ReferencedContainer = "container:ArcGraphView.xcodeproj">
+            BuildableName = "ArcGradientView.app"
+            BlueprintName = "ArcGradientView"
+            ReferencedContainer = "container:ArcGradientView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D180FDD51AC6DB3700B413F4"
-            BuildableName = "ArcGraphView.app"
-            BlueprintName = "ArcGraphView"
-            ReferencedContainer = "container:ArcGraphView.xcodeproj">
+            BuildableName = "ArcGradientView.app"
+            BlueprintName = "ArcGradientView"
+            ReferencedContainer = "container:ArcGradientView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D180FDD51AC6DB3700B413F4"
-            BuildableName = "ArcGraphView.app"
-            BlueprintName = "ArcGraphView"
-            ReferencedContainer = "container:ArcGraphView.xcodeproj">
+            BuildableName = "ArcGradientView.app"
+            BlueprintName = "ArcGradientView"
+            ReferencedContainer = "container:ArcGradientView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

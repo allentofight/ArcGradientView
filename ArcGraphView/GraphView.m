@@ -22,40 +22,6 @@ typedef UIColor * (^floatColorBlock)(float);
 
 -(void)drawGradientInContext:(CGContextRef)ctx  startingAngle:(float)a endingAngle:(float)b intRadius:(floatfloatBlock)intRadiusBlock outRadius:(floatfloatBlock)outRadiusBlock withGradientBlock:(floatColorBlock)colorBlock withSubdiv:(int)subdivCount withCenter:(CGPoint)center withScale:(float)scale withIndex:(NSInteger)idx
 {
-    CGFloat progress = 1.85/2;
-    {
-#define RGBCOLOR(r,g,b)             [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
-        
-
-        CGContextSetFillColorWithColor(ctx, RGBCOLOR(0, 255, 0).CGColor);
-        CGRect startEllipseRect = (CGRect) {
-            .origin.x = CGRectGetWidth(self.bounds)/2 - _thickness / 2.0f,
-            .origin.y = 0.0f,
-            .size.width = _thickness,
-            .size.height = _thickness
-        };
-        CGContextAddEllipseInRect(ctx, startEllipseRect);
-        CGContextFillPath(ctx);
-        
-        CGFloat radius = CGRectGetWidth(self.bounds)/2;
-
-        CGFloat radians = (float)((progress * 2.0f * M_PI) - M_PI_2);
-        CGFloat thicknessRatio = _thickness/CGRectGetWidth(self.bounds)*2;
-        
-        CGFloat xOffset = radius * (1.0f + ((1.0f - (thicknessRatio / 2.0f)) * cosf(radians)));
-        CGFloat yOffset = radius * (1.0f + ((1.0f - (thicknessRatio / 2.0f)) * sinf(radians)));
-        CGPoint endPoint = CGPointMake(xOffset, yOffset);
-        
-        CGContextSetFillColorWithColor(ctx, [UIColor redColor].CGColor);
-        CGRect endEllipseRect = (CGRect) {
-            .origin.x = endPoint.x - _thickness / 2.0f,
-            .origin.y = endPoint.y - _thickness / 2.0f,
-            .size.width = _thickness,
-            .size.height = _thickness
-        };
-        CGContextAddEllipseInRect(ctx, endEllipseRect);
-        CGContextFillPath(ctx);
-    }
 
 
     float angleDelta = (b-a)/subdivCount;
@@ -133,14 +99,15 @@ typedef UIColor * (^floatColorBlock)(float);
     else r.size.height=r.size.width;
     float radius=r.size.width/2;
     
-//    for (NSInteger idx = 0; idx < 350; idx++) {
-    [self drawGradientInContext:ctx  startingAngle:-M_PI/2 endingAngle:1.5*M_PI*0.9 intRadius:^float(float f) {
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+    CGFloat offsetRadians = DEGREES_TO_RADIANS(10);
+    [self drawGradientInContext:ctx  startingAngle:-M_PI/2-offsetRadians endingAngle:1.5*M_PI*0.9+offsetRadians intRadius:^float(float f) {
         return radius-_thickness;
     } outRadius:^float(float f) {
         return radius;
     } withGradientBlock:^UIColor *(float f) {
-        float sr = 255, sg = 0, sb = 0;
-        float er = 0, eg = 255, eb = 0;
+        float sr = 131, sg = 200, sb = 18;
+        float er = 24, eg = 110, eb = 190;
         return [UIColor colorWithRed:(f*sr+(1-f)*er)/255. green:(f*sg+(1-f)*eg)/255. blue:(f*sb+(1-f)*eb)/255. alpha:1];
     } withSubdiv:1024 withCenter:CGPointMake(CGRectGetMidX(r), CGRectGetMidY(r)) withScale:1 withIndex:0];
 //    }
